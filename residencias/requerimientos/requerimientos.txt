@@ -1,0 +1,29 @@
+----- Primeros Requerimientos ----
+
+- Cambiar Funcionalidad [No modificar  las tablas]
+- Que se pueda filtra  por temas  o proyectos
+- Dar de alta   como dministradores
+
+Programas necesarios para subir   istema en otros ordenadores
+- Xammp V 7
+- Php  V7
+- Composer 9.1
+- MySQL 7
+- Larvel 5.6
+- Node JS V9
+
+----- Nuevos requerimientos ----
+
+ los  Campos que se  deben incluir son:
+
+- Instituciones Alumnos
+     - Campus
+     - Promedio
+     - Carrera
+     - Genero
+
+- Instituciones coordinadores
+     - Campus
+     - Puesto
+     - Grado_Academico
+     - Genero

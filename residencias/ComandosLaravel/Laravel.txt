@@ -1,0 +1,36 @@
+composer create-project --prefer-dist laravel/laravel app-shop       # laravel
+
+php artisan serve <------ Correr Seridor
+127.0.0.1:8000  # direccion de servidor
+
+#Direccion de app-shop
+C:\xampp\htdocs\app-shop
+
+Controlador---------------------------------------------------------
+php artisan make:controller <nombre> --resource    <---- Con CRUD
+php artisan make:controller <nombre>               <---- Sin CRUD
+
+Modelo-------------------------------------------------------------
+php artisan make:model Trainer --migration      <----- Crear Modelo
+php artisan migrate                             <----- Correr migración
+php artisan make:migration "Nombre" --table=Nom.Modelo  <------ Agregar columna a la Tabla
+
+PDF------------------------------------------------------------------
+composer require barryvdh/laravel-dompdf
+Providers:
+Barryvdh\DomPDF\ServiceProvider::class,
+Aliases:
+'PDF' => Barryvdh\DomPDF\Facade::class,
+--------------------------------------------------------------------
+SQL
+$count = Model::where('status','=','1')->count();
+ALTER TABLE libros ADD status varchar(12);
+Update libros set status='disponible';
+
+Correr  el comando para  la base de datos:
+php artisan migrate:fresh --seed
+
+------- NODE JS ------
+
+---- npm run watch
+
